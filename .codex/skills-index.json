@@ -3,7 +3,7 @@
   "name": "claude-code-skills",
   "description": "Production-ready skill packages for AI agents - Marketing, Engineering, Product, C-Level, PM, and RA/QM",
   "repository": "https://github.com/alirezarezvani/claude-skills",
-  "total_skills": 292,
+  "total_skills": 290,
   "skills": [
     {
       "name": "business-growth-skills",
@@ -792,12 +792,6 @@
       "description": "Use when the user asks to automate browser tasks, scrape websites, fill forms, capture screenshots, extract structured data from web pages, or build web automation workflows. NOT for testing \u2014 use playwright-pro for that."
     },
     {
-      "name": "capture",
-      "source": "../../engineering/capture/skills/capture",
-      "category": "engineering-advanced",
-      "description": "Captures and organizes chaotic brain dumps into a structured, actionable system with zero information loss. Use this skill whenever the user says 'capture this', 'brain dump', 'let me dump some ideas', 'I've got a bunch of thoughts', 'here's everything on my mind', 'idea dump', 'let me get this out of my head', 'I need to organize my thoughts', 'here's what I'm thinking', or any variation where someone is unloading a messy stream of ideas, tasks, thoughts, and plans wanting them turned into something coherent. Also trigger when the user pastes or dictates a long, unstructured block of mixed ideas \u2014 even without the exact phrase \u2014 the intent is the same. Fast-to-action by design: no upfront intake. Output is four sections (Projects/Ideas, Tasks, Connections, How I Can Help) ending with a directive question. Asks at most one mid-organization clarifying question when a single item is genuinely ambiguous between task and project."
-    },
-    {
       "name": "caveman",
       "source": "../../engineering/caveman/skills/caveman",
       "category": "engineering-advanced",
@@ -1048,12 +1042,6 @@
       "source": "../../engineering/prompt-governance/skills/prompt-governance",
       "category": "engineering-advanced",
       "description": "Use when managing prompts in production at scale: versioning prompts, running A/B tests on prompts, building prompt registries, preventing prompt regressions, or creating eval pipelines for production AI features. Triggers: 'manage prompts in production', 'prompt versioning', 'prompt regression', 'prompt A/B test', 'prompt registry', 'eval pipeline'. NOT for writing or improving individual prompts (use senior-prompt-engineer). NOT for RAG pipeline design (use rag-architect). NOT for LLM cost reduction (use llm-cost-optimizer)."
-    },
-    {
-      "name": "pulse",
-      "source": "../../engineering/pulse/skills/pulse",
-      "category": "engineering-advanced",
-      "description": "Multi-source recency research skill that takes the pulse of any topic across Reddit, Hacker News, the open web, and optionally X/Twitter within a configurable recent window (default 30 days). Forcing intake clarifies topic specificity, angle (trend/sentiment/problems/opportunities/comparison), time window, and platform scope before searching. Returns a synthesized briefing with citations, engagement metrics, and cross-platform pattern analysis. Triggers: 'pulse on [topic]', 'what's happening with [topic]', 'what are people saying about [topic]', 'current conversation about [topic]', 'take the pulse of [topic]', 'trending: [topic]', 'find me info on [topic]', or any variation requesting multi-source recency intelligence on a topic. Also use for competitor research, trend discovery, tool comparisons, and audience sentiment analysis."
     },
     {
       "name": "rag-architect",
@@ -1775,7 +1763,7 @@
       "description": "Software engineering and technical skills"
     },
     "engineering-advanced": {
-      "count": 77,
+      "count": 75,
       "source": "../../engineering",
       "description": "Advanced engineering skills - agents, RAG, MCP, CI/CD, databases, observability"
     },
