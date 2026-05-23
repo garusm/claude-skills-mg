@@ -1,13 +1,13 @@
 ---
 title: "Slash Commands — AI Coding Agent Commands & Codex Shortcuts"
-description: "73 slash commands for Claude Code, Codex CLI, and Gemini CLI — sprint planning, tech debt analysis, PRDs, OKRs, and more."
+description: "74 slash commands for Claude Code, Codex CLI, and Gemini CLI — sprint planning, tech debt analysis, PRDs, OKRs, and more."
 ---
 
 <div class="domain-header" markdown>
 
 # :material-console: Slash Commands
 
-<p class="domain-count">73 commands for quick access to common operations</p>
+<p class="domain-count">74 commands for quick access to common operations</p>
 
 </div>
 
@@ -288,6 +288,12 @@ description: "73 slash commands for Claude Code, Codex CLI, and Gemini CLI — s
     ---
 
     Command: /cs:inbox-triage
+
+-   :material-console:{ .lg .middle } **[`/cs-handoff-setup`](cs-handoff-setup.md)**
+
+    ---
+
+    Configure the handoff skill. Walks 5 questions (plus 1-2 optional) and writes the config. Re-run any time.
 
 -   :material-console:{ .lg .middle } **[`/cs-reflect`](cs-reflect.md)**
 
