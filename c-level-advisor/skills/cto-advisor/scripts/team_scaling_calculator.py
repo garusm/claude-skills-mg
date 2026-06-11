@@ -561,10 +561,21 @@ if __name__ == "__main__":
         current_state = SAMPLE_CURRENT_STATE
         growth_targets = SAMPLE_GROWTH_TARGETS
     elif args.input_file:
-        with open(args.input_file) as f:
-            data = json.load(f)
-        current_state = data["current_state"]
-        growth_targets = data["growth_targets"]
+        try:
+            with open(args.input_file) as f:
+                data = json.load(f)
+        except FileNotFoundError:
+            print(f"Error: File not found: {args.input_file}", file=sys.stderr)
+            sys.exit(1)
+        except json.JSONDecodeError as e:
+            print(f"Error: Invalid JSON in {args.input_file}: {e}", file=sys.stderr)
+            sys.exit(1)
+        try:
+            current_state = data["current_state"]
+            growth_targets = data["growth_targets"]
+        except KeyError as e:
+            print(f"Error: Missing required field {e} in {args.input_file}", file=sys.stderr)
+            sys.exit(1)
     else:
         current_state = SAMPLE_CURRENT_STATE
         growth_targets = SAMPLE_GROWTH_TARGETS
